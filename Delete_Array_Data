@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{  
+    int data[6],ndata,a,indax;
+    
+    printf("Please enter Your data Number!");
+    scanf("%d",&ndata);
+    
+    printf("Enter %d data array",ndata);
+    for(a=1;a<=ndata;a++)
+    {
+        scanf("%d",&data[a]);
+    }
+    
+    printf("Enter Array are!\n");
+    for(a=1;a<=ndata;a++)
+    {
+        printf("%d  ",data[a]);
+    }
+    
+    printf("\numberEnter the indax number you want to delete! \n");
+    scanf("%d",&indax);
+    a=indax;
+    
+    while(a<=ndata-1)
+    {
+        data[a-1]=data[a];
+        printf("array place %d",data[a-1]);
+        a++;
+    }
+    
+    printf  ("After Delete is: \n");
+    for(a=1;a<=ndata;a++)
+    {
+        printf("%d ",data[a]);
+    }
+    
+    return 0;
+}
