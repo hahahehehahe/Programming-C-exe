@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int data[5];
+    
+    printf("Please enter 5 Data!");
+    
+    for (int a=1;a<=5;a++)
+    {
+        scanf("%d",&data[a]);
+    }
+    
+    for (int b=1;b<=5;b++)
+    {
+        printf("Data is = %d \n",data[b]);
+    }
+    
+    
+    return 0;
+}
