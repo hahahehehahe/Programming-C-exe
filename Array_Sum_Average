@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int data[100],sum=0,average=0,ndata=0;
+    
+    printf("Please enter the arr data!");
+    scanf("%d",&ndata);
+    
+    for(int i=1;i<=ndata;i++)
+    {
+        printf("Enter Data %d \n",i);
+        scanf("%d",&data[i]);
+    }
+    
+    for(int a=1;a<=ndata;a++)
+    {
+        sum =sum + data[a];
+        printf("Sum value is %d \n",sum);
+    }
+     
+     average=sum/ndata;
+     printf("Average value is %d",average);
+    return 0;
+}
