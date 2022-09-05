@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main ()
+
+{   
+    for(int a=1;a<=10;a++)
+    {   for(int space=1;space<=(10-a);space++)
+        {
+            printf("*");
+        }   
+        
+        for(int star=1;star<=(2*a)-1;star++)
+        {
+            printf(" ");
+        }
+        
+        for (int space2=1;space2<=(10-a);space2++)
+        {
+            printf("*");
+        }
+        
+        printf("\n");
+    }   
+        
+    for(int b=10;b>=1;b--)
+    {
+        for(int space3=1;space3<=(10-b);space3++)
+        {
+            printf("*");
+        }
+        
+        for(int star2=1;star2<=(b*2)-1;star2++)
+        {
+            printf(" ");
+        }
+        
+        for(int space4=1;space4<=(10-b);space4++)
+        {
+            printf("*");
+        }
+        
+        printf("\n");
+    }
+    
+    
+    return 0;
+    
+}
